@@ -29,7 +29,7 @@ int main(int argc, const char * argv[])
 {
 	@autoreleasepool {
 		
-		NSArray *whiteListedDomains = @[@"instapaper.com", @"feedwrangler.net"];
+		NSArray *whiteListedDomains = @[@"instapaper.com", @"feedwrangler.net", @"github.com"];
 		
 		NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
 		
