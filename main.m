@@ -20,7 +20,7 @@
 	return [NSString stringWithFormat:@"%@ %@ : %@",
 			[[self domain] stringByPaddingToLength:20 withString:@" " startingAtIndex:0],
 			[[self name] stringByPaddingToLength:10 withString:@" " startingAtIndex:0],
-			[self value]];
+			[[self value] stringByPaddingToLength:50 withString:@" " startingAtIndex:0]];
 }
 
 @end
