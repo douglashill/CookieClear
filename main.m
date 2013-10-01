@@ -9,13 +9,13 @@
 
 @interface NSHTTPCookie (DHAdditions)
 
-- (NSString *)DHDescription;
+- (NSString *)dh_description;
 
 @end
 
 @implementation NSHTTPCookie (DHAdditions)
 
-- (NSString *)DHDescription
+- (NSString *)dh_description
 {
 	return [NSString stringWithFormat:@"%@ %@ : %@",
 			[[self domain] stringByPaddingToLength:20 withString:@" " startingAtIndex:0],
@@ -42,7 +42,7 @@ int main(int argc, const char * argv[])
 			}
 			
 			if (shouldDeleteCookie) {
-				NSLog(@"Deleting: %@", [cookie DHDescription]);
+				NSLog(@"Deleting: %@", [cookie dh_description]);
 				[storage deleteCookie:cookie];
 			}
 		}
